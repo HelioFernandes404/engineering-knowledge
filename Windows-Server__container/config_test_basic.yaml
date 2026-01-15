@@ -1,0 +1,38 @@
+receivers:
+  windowseventlog/application:
+    channel: application
+    start_at: beginning  # Changed to process all events
+    poll_interval: 1s
+    max_reads: 10
+    exclude_providers: ["otelcol"]  # Prevent infinite loop
+
+processors:
+  batch:
+    send_batch_size: 100
+    timeout: 5s
+
+exporters:
+  otlphttp/victorialogs:
+    logs_endpoint: http://192.168.100.12:31281/insert/opentelemetry/v1/logs
+    compression: gzip
+    tls:
+      insecure: true
+    retry_on_failure:
+      enabled: true
+      initial_interval: 5s
+
+  debug:
+    verbosity: detailed
+    sampling_initial: 10
+    sampling_thereafter: 100
+
+service:
+  pipelines:
+    logs:
+      receivers: [windowseventlog/application]
+      processors: [batch]
+      exporters: [debug, otlphttp/victorialogs]
+
+  telemetry:
+    logs:
+      level: debug

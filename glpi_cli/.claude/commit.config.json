@@ -1,0 +1,15 @@
+{
+  "commit": {
+    "skip_footer": true,
+    "footer": ""
+  },
+  "author": {
+    "use_claude": false,
+    "custom_footer": ""
+  },
+  "preferences": {
+    "skip_generated_with": true,
+    "skip_coauthored_by": true,
+    "clean_commits": true
+  }
+}

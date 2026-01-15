@@ -1,0 +1,68 @@
+# vmagent is a monitoring agent for VictoriaMetrics
+# TODO: doc sobre a config
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: monitoring
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vmagent-scrape-config
+  namespace: monitoring
+data:
+  scrape.yml: |
+    global:
+      scrape_interval: 30s
+    scrape_configs:
+      - job_name: "vmagent-self"
+        static_configs:
+          - targets: ["localhost:8429"]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vmagent
+  namespace: monitoring
+  labels:
+    app: vmagent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vmagent
+  template:
+    metadata:
+      labels:
+        app: vmagent
+    spec:
+      containers:
+      - name: vmagent
+        image: victoriametrics/vmagent:v1.112.0
+        args:
+          - "-promscrape.config=/etc/vmagent/scrape.yml"
+          - "-remoteWrite.url=http://vminsert.monitoring.svc.cluster.local:8420/api/v1/write"
+        ports:
+          - containerPort: 8429
+        volumeMounts:
+          - name: config-volume
+            mountPath: /etc/vmagent
+      volumes:
+        - name: config-volume
+          configMap:
+            name: vmagent-scrape-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vmagent
+  namespace: monitoring
+spec:
+  selector:
+    app: vmagent
+  ports:
+    - protocol: TCP
+      port: 8429
+      targetPort: 8429
+  type: ClusterIP

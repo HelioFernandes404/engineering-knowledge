@@ -1,0 +1,443 @@
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/DominandoEFCore.exe
+C:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/DominandoEFCore.deps.json
+C:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/DominandoEFCore.runtimeconfig.json
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/DominandoEFCore.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/DominandoEFCore.pdb
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Azure.Core.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Azure.Identity.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Caching.Abstractions.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Caching.Memory.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Configuration.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Binder.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.Configuration.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.Console.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/System.Drawing.Common.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/System.Memory.Data.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/System.Runtime.Caching.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/System.Security.Permissions.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/System.Windows.Extensions.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+c:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/DominandoEFCore.csproj.AssemblyReference.cache
+c:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/DominandoEFCore.GeneratedMSBuildEditorConfig.editorconfig
+c:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/DominandoEFCore.AssemblyInfoInputs.cache
+c:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/DominandoEFCore.AssemblyInfo.cs
+c:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/DominandoEFCore.csproj.CoreCompileInputs.cache
+C:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/Dominand.4F24DC0A.Up2Date
+c:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/DominandoEFCore.dll
+c:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/refint/DominandoEFCore.dll
+c:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/DominandoEFCore.pdb
+C:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/DominandoEFCore.genruntimeconfig.cache
+C:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/ref/DominandoEFCore.dll
+c:/Users/helio/cursos/projetos/EFcore/obj/Debug/net7.0/DominandoEFCore.sourcelink.json
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Humanizer.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/Mono.TextTemplating.dll
+c:/Users/helio/cursos/projetos/EFcore/bin/Debug/net7.0/System.CodeDom.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.csproj.AssemblyReference.cache
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.AssemblyInfoInputs.cache
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.AssemblyInfo.cs
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.csproj.CoreCompileInputs.cache
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.sourcelink.json
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/refint/DominandoEFCore.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.pdb
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/DominandoEFCore.exe
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/DominandoEFCore.deps.json
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/DominandoEFCore.runtimeconfig.json
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/DominandoEFCore.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/DominandoEFCore.pdb
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Azure.Core.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Azure.Identity.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Humanizer.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Configuration.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Binder.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.Configuration.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.Console.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/Mono.TextTemplating.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/System.CodeDom.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/System.Drawing.Common.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/System.Memory.Data.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/System.Runtime.Caching.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/System.Security.Permissions.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/System.Windows.Extensions.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/Dominand.4F24DC0A.Up2Date
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.genruntimeconfig.cache
+C:/Users/helio/cursos/projetos de curso/lab-DominandoEFCore/EFcore/obj/Debug/net7.0/ref/DominandoEFCore.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/DominandoEFCore.exe
+C:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/DominandoEFCore.deps.json
+C:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/DominandoEFCore.runtimeconfig.json
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/DominandoEFCore.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/DominandoEFCore.pdb
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Azure.Core.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Azure.Identity.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Humanizer.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Caching.Abstractions.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Caching.Memory.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Configuration.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Binder.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.Configuration.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Logging.Console.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/Mono.TextTemplating.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/System.CodeDom.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/System.Drawing.Common.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/System.Memory.Data.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/System.Runtime.Caching.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/System.Security.Permissions.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/System.Windows.Extensions.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.csproj.AssemblyReference.cache
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.GeneratedMSBuildEditorConfig.editorconfig
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.AssemblyInfoInputs.cache
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.AssemblyInfo.cs
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.csproj.CoreCompileInputs.cache
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.sourcelink.json
+C:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/Dominand.4F24DC0A.Up2Date
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/refint/DominandoEFCore.dll
+c:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.pdb
+C:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/DominandoEFCore.genruntimeconfig.cache
+C:/Users/helio/cursos/projetos-devIO/1.DominandoEFCore/EFcore/obj/Debug/net7.0/ref/DominandoEFCore.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/DominandoEFCore.exe
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/DominandoEFCore.deps.json
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/DominandoEFCore.runtimeconfig.json
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/DominandoEFCore.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/DominandoEFCore.pdb
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Azure.Core.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Azure.Identity.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Humanizer.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Configuration.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Binder.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.Configuration.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.Console.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/Mono.TextTemplating.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/System.CodeDom.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/System.Drawing.Common.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/System.Memory.Data.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/System.Runtime.Caching.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/System.Security.Permissions.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/System.Windows.Extensions.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/DominandoEFCore.csproj.AssemblyReference.cache
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/DominandoEFCore.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/DominandoEFCore.AssemblyInfoInputs.cache
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/DominandoEFCore.AssemblyInfo.cs
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/DominandoEFCore.csproj.CoreCompileInputs.cache
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/DominandoEFCore.sourcelink.json
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/Dominand.4F24DC0A.Up2Date
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/DominandoEFCore.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/refint/DominandoEFCore.dll
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/DominandoEFCore.pdb
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/DominandoEFCore.genruntimeconfig.cache
+C:/Users/helio/projects/efcore-curso/EFCore-Advanced/obj/Debug/net7.0/ref/DominandoEFCore.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/DominandoEFCore
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/DominandoEFCore.deps.json
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/DominandoEFCore.runtimeconfig.json
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/DominandoEFCore.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/DominandoEFCore.pdb
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Azure.Core.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Azure.Identity.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Humanizer.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Caching.Abstractions.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Caching.Memory.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Configuration.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Binder.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.Configuration.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.Console.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Mono.TextTemplating.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.CodeDom.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Drawing.Common.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Memory.Data.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Runtime.Caching.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Security.Permissions.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Windows.Extensions.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.csproj.AssemblyReference.cache
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.GeneratedMSBuildEditorConfig.editorconfig
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.AssemblyInfoInputs.cache
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.AssemblyInfo.cs
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.csproj.CoreCompileInputs.cache
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.sourcelink.json
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/Dominand.4F24DC0A.Up2Date
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/refint/DominandoEFCore.dll
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.pdb
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.genruntimeconfig.cache
+/home/helio/projetos/helioFernandes404/Entity-Framework-Core-Advanced/obj/Debug/net7.0/ref/DominandoEFCore.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/DominandoEFCore
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/DominandoEFCore.deps.json
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/DominandoEFCore.runtimeconfig.json
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/DominandoEFCore.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/DominandoEFCore.pdb
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Azure.Core.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Azure.Identity.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Humanizer.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Data.SqlClient.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Relational.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.SqlServer.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Caching.Abstractions.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Caching.Memory.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Configuration.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Binder.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.Abstractions.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.Configuration.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Logging.Console.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Options.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Identity.Client.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Identity.Client.Extensions.Msal.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.SqlServer.Server.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Microsoft.Win32.SystemEvents.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/Mono.TextTemplating.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.CodeDom.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Configuration.ConfigurationManager.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Drawing.Common.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Memory.Data.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Runtime.Caching.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Security.Cryptography.ProtectedData.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Security.Permissions.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/System.Windows.Extensions.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/bin/Debug/net7.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.csproj.AssemblyReference.cache
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.GeneratedMSBuildEditorConfig.editorconfig
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.AssemblyInfoInputs.cache
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.AssemblyInfo.cs
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.csproj.CoreCompileInputs.cache
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.csproj.CopyComplete
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/Debug/net7.0/refint/DominandoEFCore.dll
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.pdb
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/Debug/net7.0/DominandoEFCore.genruntimeconfig.cache
+/home/helio/projetos/helioFernandes404/DominandoEFCORE/Entity-Framework-Core-Advanced/obj/Debug/net7.0/ref/DominandoEFCore.dll

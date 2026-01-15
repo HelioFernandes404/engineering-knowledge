@@ -1,0 +1,133 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: monitoring
+  labels:
+    name: monitoring
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: system-metrics-collector-config
+  namespace: monitoring
+data:
+  APP_NAME: "InfranGen"
+  APP_VERSION: "1.0.0"
+  ENVIRONMENT: "production"
+  METRICS_INTERVAL_SECONDS: "60"
+  METRICS_SERVER_PORT: "8000"
+  COLLECT_CPU_METRICS: "true"
+  COLLECT_MEMORY_METRICS: "true"
+  COLLECT_DISK_METRICS: "true"
+  COLLECT_NETWORK_METRICS: "true"
+  LOG_LEVEL: "INFO"
+  LOG_FORMAT: "json"
+  # OpenTelemetry (desabilitado por padr�o)
+  ENABLE_OTLP: "false"
+  OTEL_EXPORTER_OTLP_ENDPOINT: "http://otel-collector:4317"
+  # VictoriaLogs (desabilitado por padr�o)
+  ENABLE_VICTORIALOGS: "false"
+  VICTORIALOGS_URL: "http://victorialogs:9428"
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: system-metrics-collector
+  namespace: monitoring
+  labels:
+    app: system-metrics-collector
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: system-metrics-collector
+  template:
+    metadata:
+      labels:
+        app: system-metrics-collector
+        version: v1
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "8000"
+        prometheus.io/path: "/metrics"
+    spec:
+      containers:
+      - name: metrics-collector
+        image: infragen:latest
+        imagePullPolicy: IfNotPresent  # Usa imagem local do K3s
+        ports:
+        - name: metrics
+          containerPort: 8000
+          protocol: TCP
+        envFrom:
+        - configMapRef:
+            name: system-metrics-collector-config
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "100m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 10
+          periodSeconds: 30
+          timeoutSeconds: 5
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        volumeMounts:
+        - name: output
+          mountPath: /app/output
+      volumes:
+      - name: output
+        emptyDir: {}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: system-metrics-collector
+  namespace: monitoring
+  labels:
+    app: system-metrics-collector
+spec:
+  type: ClusterIP
+  ports:
+  - name: metrics
+    port: 8000
+    targetPort: 8000
+    protocol: TCP
+  selector:
+    app: system-metrics-collector
+
+# ---
+# # ServiceMonitor para Victoria Metrics Operator (descomente se tiver o operator instalado)
+# apiVersion: monitoring.coreos.com/v1
+# kind: ServiceMonitor
+# metadata:
+#   name: system-metrics-collector
+#   namespace: monitoring
+#   labels:
+#     app: system-metrics-collector
+# spec:
+#   selector:
+#     matchLabels:
+#       app: system-metrics-collector
+#   endpoints:
+#   - port: metrics
+#     interval: 60s
+#     path: /metrics

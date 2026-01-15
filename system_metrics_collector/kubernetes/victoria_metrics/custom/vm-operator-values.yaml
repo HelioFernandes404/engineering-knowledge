@@ -1,0 +1,75 @@
+# Configurações de imagem
+image:
+  repository: victoriametrics/operator
+  tag: v0.63.0 # latest
+  pullPolicy: IfNotPresent
+
+# Configurações do operator
+operator:
+  # Desabilitar conversão automática de objetos Prometheus
+  disable_prometheus_converter: false
+
+  # Habilitar ownership para objetos convertidos
+  enable_converter_ownership: true
+
+  # Criar PSP automaticamente
+  psp_auto_creation_enabled: true
+
+  # Habilitar config-reloader customizado
+  enable_config_reloader: true
+
+# Recursos do operator
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+# Configurações de webhook
+admissionWebhooks:
+  enabled: true
+  certManager:
+    enabled: true
+
+# Variables de ambiente para configurar defaults
+env:
+# Defaults para VMSingle
+- name: VM_VMSINGLEDEFAULT_RESOURCE_LIMIT_MEM
+  value: "4000Mi"
+- name: VM_VMSINGLEDEFAULT_RESOURCE_LIMIT_CPU
+  value: "2000m"
+
+# Defaults para VMCluster/vmstorage
+- name: VM_VMCLUSTERDEFAULT_VMSTORAGE_RESOURCE_LIMIT_MEM
+  value: "16000Mi"
+- name: VM_VMCLUSTERDEFAULT_VMSTORAGE_RESOURCE_LIMIT_CPU
+  value: "4000m"
+
+# Timeout para pods ficarem ready
+- name: VM_PODWAITREADYTIMEOUT
+  value: "120s"
+
+# Intervalo de reconciliação forçada
+- name: VM_FORCERESYNCINTERVAL
+  value: "60s"
+
+# ServiceAccount
+serviceAccount:
+  create: true
+  name: vm-operator
+
+# RBAC
+rbac:
+  create: true
+  pspEnabled: false
+
+# Monitoramento do operator
+serviceMonitor:
+  enabled: true
+  namespace: vm-system
+  interval: 30s
+
+# Log level
+logLevel: info

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+# Using setyptools and wheel to build the package
+
+[project]
+name = "python-developer"
+version = "0.1.0"
+description = "Python Developer"
+authors = ["Python Developer"]
+license = "MIT"
+requires-python = ">=3.6"
+dependencies = [
+    "black",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=6.0",
+    "coverage"
+]
+cli = [
+    "click>=8.0"
+]
+# Optional dependencies for testing and cli
+
+[project.scripts]
+meu-comando = "meu_projeto.main:cli"
+
+
+[tool.black]
+line-length = 88
+target-version = ['py38']

@@ -1,0 +1,6 @@
+# Ignore compiled files and backups
+*.luac
+*.swp
+*.bak
+*.tmp
+lazy-lock.json

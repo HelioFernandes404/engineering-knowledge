@@ -1,0 +1,86 @@
+receivers:
+  windowseventlog/application:
+    channel: application
+    start_at: end
+    poll_interval: 1s
+    max_reads: 100
+    operators:
+      - type: move
+        from: body.message
+        to: body
+        on_error: drop
+
+  windowseventlog/system:
+    channel: system
+    start_at: end
+    poll_interval: 1s
+    max_reads: 100
+    operators:
+      - type: move
+        from: body.message
+        to: body
+        on_error: drop
+
+  windowseventlog/security:
+    channel: security
+    start_at: end
+    poll_interval: 1s
+    operators:
+      - type: move
+        from: body.message
+        to: body
+        on_error: drop
+
+processors:
+  resourcedetection:
+    detectors: [system]
+    system:
+      hostname_sources: ["os"]
+
+  attributes:
+    actions:
+      - key: environment
+        value: production
+        action: insert
+      - key: datacenter
+        value: dc1
+        action: insert
+
+  batch:
+    send_batch_size: 8192
+    timeout: 200ms
+    send_batch_max_size: 10000
+
+exporters:
+  otlphttp/victorialogs:
+    logs_endpoint: http://192.168.100.12:31281/insert/opentelemetry/v1/logs
+    compression: gzip
+    tls:
+      insecure: true
+    headers:
+      VL-Stream-Fields: "host,environment"
+    retry_on_failure:
+      enabled: true
+      initial_interval: 5s
+      max_interval: 30s
+      max_elapsed_time: 300s
+    sending_queue:
+      enabled: true
+      num_consumers: 10
+      queue_size: 5000
+
+  debug:
+    verbosity: detailed
+    sampling_initial: 5
+    sampling_thereafter: 200
+
+service:
+  pipelines:
+    logs:
+      receivers: [windowseventlog/application, windowseventlog/system, windowseventlog/security]
+      processors: [resourcedetection, attributes, batch]
+      exporters: [otlphttp/victorialogs, debug]
+
+  telemetry:
+    logs:
+      level: info

@@ -1,0 +1,75 @@
+services:
+  # Web application
+  frontend:
+    image: heliosuns404/cogcs-web:0.0.1-698907c
+    container_name: cogcs-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NUXT_PUBLIC_API_URL=${NUXT_PUBLIC_API_URL}
+      - NODE_ENV=${NODE_ENV}
+    depends_on:
+      - backend
+    networks:
+      - cogcs-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Backend - FastAPI application
+  backend:
+    image: heliosuns404/cogcs-backend:0.0.1-41a8f7d
+    container_name: cogcs-backend
+    ports:
+      - "3030:3030"
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+      - SUPABASE_JWT_SECRET=${SUPABASE_JWT_SECRET}
+      - MONGO_URI=${MONGO_URI}
+      - VICTORIALOGS_URL=${VICTORIALOGS_URL}
+      - PORT=${PORT}
+      - DEBUG=${DEBUG}
+    depends_on:
+      - mongo
+    networks:
+      - cogcs-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3030/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # MongoDB - Database
+  mongo:
+    image: mongo:7.0
+    container_name: cogcs-mongo
+    ports:
+      - "127.0.0.1:27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=cogcs
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - cogcs-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  mongo_data:
+    driver: local
+
+networks:
+  cogcs-network:
+    driver: bridge
+

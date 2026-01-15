@@ -1,0 +1,201 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Hélio Fernandes} \\ \vspace{1pt} $|$
+    \small +5587988023661 $|$ \href{mailto:heliofer25@icloud.com}{\underline{heliofer25@icloud.com}} $|$ 
+    \href{https://www.linkedin.com/in/heliofernandes/}{\underline{linkedin.com/in/heliofernandes}} $|$
+    \href{https://github.com/HelioFernandes404}{\underline{github.com/HelioFernandes404}} $|$
+    \href{https://medium.com/@heliodevhub}{\underline{medium.com/@heliodevhub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Educação}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UNIFAEL}{São Paulo, SP}
+      { Bacharelado em Ciência da Computação }{Out. 2022 -- Presente}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experiência}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{2023 -- Presente}
+      {SystemFrame}{Remoto}
+      \resumeItemListStart
+        \resumeItem{Projetei pipeline de alertas multi-tenant integrando VictoriaMetrics, GLPI e ServiceNow com deduplicação Redis (95\% redução tickets duplicados) para 7+ clientes enterprise}
+        \resumeItem{Implementei 4 exporters Prometheus customizados e padronizei observabilidade com OpenTelemetry em stack Python/TypeScript}
+        \resumeItem{Gerencio infraestrutura AWS multi-account via Terraform com GitHub OIDC, state encryption KMS, e GitOps ArgoCD/Helm para 7 clusters K3s}
+        \resumeItem{Desenvolvi motor event sourcing para sincronização bidirecional GLPI-ServiceNow com transactional outbox pattern}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Desenvolvedor Full Stack}{2019 -- 2023}
+      {DAI-TEC}{Integral/Remoto}
+      \resumeItemListStart
+        \resumeItem{Desenvolvi soluções de IA Generativa com LLMs, RAG (LlamaIndex) e LangChain, integrando a sistemas corporativos (Stripe, WhatsApp) via microsserviços}
+        \resumeItem{Implementei pipelines de ML com monitoramento MLflow alcançando 23\% de redução no tempo de resposta e otimização de custos em AWS}
+        \resumeItem{Apliquei prompt engineering e observabilidade (Prometheus/Grafana) em aplicações de automação conversacional em produção}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJETOS-----------
+\section{Projetos}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{System Frame Ops} $|$ \emph{AWS, Python, Helm, Kubernetes, Terraform, Ansible, VictoriaMetrics}}{2023 -- Presente}
+        \resumeItemListStart
+        \resumeItem{Implementei plataforma de operações de TI integrando GLPI, VictoriaMetrics e Zabbix com exportadores Python customizados}
+        \resumeItem{Desenvolvi aplicação full-stack com React frontend, Node.js/Express backend e microsserviços Python Flask}
+        \resumeItem{Automatizei infraestrutura usando Terraform para AWS, Ansible para configuração e Kubernetes/Helm para deployment}
+        \resumeItem{Criei arquitetura de monitoramento escalável com exportadores Aruba/Meraki e alertas via webhook para GLPI/Discord/Twilio}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+            {\textbf{DAI TEC - Assistente Inteligente com IA Generativa} $|$ \emph{LangChain, LlamaIndex, OpenAI API, AWS}}{Jun 2022 -- 2023}
+            \resumeItemListStart
+              \resumeItem{Desenvolvimento de solução de IA conversacional com orquestração de workflows usando LangChain e RAG (LlamaIndex + Qdrant) para processamento inteligente de documentos}
+              \resumeItem{Construção de pipeline de dados end-to-end (ingestão, embeddings vetoriais, retrieval) com prompt engineering otimizado, resultando em 23\% de melhoria na relevância}
+              \resumeItem{Integração de modelos de IA a sistemas corporativos via APIs REST (Stripe para pagamentos, WhatsApp Business) com arquitetura de microsserviços escalável}
+              \resumeItem{Deploy em produção AWS com monitoramento de modelos (Prometheus/Grafana), observabilidade e gestão de custos de inferência usando S3 e MongoDB}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+
+%
+%-----------HABILIDADES TÉCNICAS-----------
+\section{Habilidades Técnicas}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Linguagens de Programação}{: TypeScript, JavaScript, Python, C\#, SQL (PostgreSQL, MongoDB), HTML/CSS} \\
+     \textbf{Frameworks \& Libraries}{: Next.js, React, Angular, Node.js, Express.js, Flask, ASP.NET Core, Tailwind CSS} \\
+     \textbf{DevOps \& Infraestrutura}{: Docker, Kubernetes, Terraform, Ansible, Helm, AWS (S3, Lambda, DynamoDB), NGINX} \\
+     \textbf{Bancos de Dados}{: MongoDB, PostgreSQL, MySQL, DynamoDB, VictoriaMetrics} \\
+     \textbf{Monitoramento \& Observabilidade}{: VictoriaMetrics, Prometheus, Grafana, AlertManager, Winston, Zabbix} \\
+     \textbf{IA \& Machine Learning}{: OpenAI API, LlamaIndex, RAG, Xenova Transformers, Google Cloud Translate} \\
+     \textbf{Ferramentas \& Integrações}{: Git, Stripe API, Auth0, Socket.io, RabbitMQ, Webpack, Vite, JWT} \\
+     \textbf{Idiomas}{: Português (Nativo), Inglês (Intermediário)} }}
+ \end{itemize}
+
+
+
+%-------------------------------------------
+\end{document}

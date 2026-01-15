@@ -1,0 +1,80 @@
+
+name: Lab-ci-cd
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+env:
+  AWS_REGION: ${{ secrets.AWS_REGION }}
+  AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  PATH_TO_DOCKERFILE: src/projeto1/src/Dockerfile
+  ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
+  ECR_URI: ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPOSITORY }}
+
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      # Faz o login no Docker Hub
+      - name: Login no Docker Hub
+        uses: docker/login-action@v3 
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # Build e push da imagem para o Docker Hub
+      - name: Build and push to Dockerhub # Construir e publicar a imagem no Docker Hub
+        uses: docker/build-push-action@v6.2.0
+        with:
+            context: ./src/projeto1/src # Aonde está o código fonte da aplicação 
+            push: true
+            file: ./src/projeto1/src/Dockerfile # Arquivo Dockerfile do meu context
+            tags: | 
+              heliofernandes/lab-ecr:latest
+
+  CD:
+    runs-on: ubuntu-latest
+    needs: CI
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Fazer login no DockerHub
+      - name: Login no Docker Hub
+        uses: docker/login-action@v3 
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # Puxar a imagem do Docker Hub
+      - name: Pull Docker image from DockerHub
+        run: docker pull heliofernandes/lab-ecr:latest
+      
+      # Fazer login no ECR
+      - name: Fazer login AWS ECR
+        run: aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com
+
+      # Tag da imagem para o ECR
+      - name: Tag Docker image
+        run: docker tag heliofernandes/lab-ecr:latest ${{secrets.AWS_ACCOUNT_ID}}.dkr.ecr.${{secrets.AWS_REGION}}.amazonaws.com/${{secrets.ECR_REPOSITORY}}:latest
+
+      # Push da imagem para o ECR
+      - name: Push Docker image
+        run: docker push ${{secrets.AWS_ACCOUNT_ID}}.dkr.ecr.${{secrets.AWS_REGION}}.amazonaws.com/${{secrets.ECR_REPOSITORY}}:latest
+
+      # Listar imagens no ECR e excluir as antigas, mantendo apenas a mais recente
+      - name: Cleanup old images from ECR
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          ECR_URL: ${{ env.ECR_URI }}
+        run: |
+          images=$(aws ecr list-images --repository-name ${{ secrets.ECR_REPOSITORY }} --query 'imageIds[*]' --output json)
+          aws ecr batch-delete-image --repository-name ${{ secrets.ECR_REPOSITORY }} --image-ids "$images" || true
+    
+      
