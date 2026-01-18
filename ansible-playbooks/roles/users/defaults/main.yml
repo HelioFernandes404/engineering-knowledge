@@ -1,9 +1,0 @@
-users:
-- { name: paulostation, group: admin }
-
-groups_:
-  admin:
-  - sudo
-  - admin
-  guest:
-  - guest

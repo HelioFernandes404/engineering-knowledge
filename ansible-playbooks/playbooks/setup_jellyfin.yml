@@ -1,9 +1,0 @@
----
-- name: Setup neovim
-  hosts: all
-  roles:
-    - role: jellyfin
-      tags:
-        - jellyfin
-
-

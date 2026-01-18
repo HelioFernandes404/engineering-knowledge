@@ -1,3 +1,0 @@
-- name: Install slack using snap
-  community.general.snap:
-    name: slack
