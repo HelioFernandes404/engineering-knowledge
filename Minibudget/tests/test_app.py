@@ -1,36 +1,28 @@
 import pytest
-import os
 import sys
-import tempfile
+import os
 
-# Add project root to path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# --- PATH CONFIGURATION ---
+# Ensure the project root is in sys.path for module imports
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
 
-from app import app, db
+# Import create_app and db from app.py and db.py respectively
+from app import create_app, db
 
-@pytest.fixture
-def client():
-    db_fd, db_path = tempfile.mkstemp()
-    app.config['DATABASE'] = db_path
-    app.config['TESTING'] = True
-
-    with app.test_client() as client:
-        with app.app_context():
-            db.init_db()
-        yield client
-
-    os.close(db_fd)
-    os.unlink(db_path)
+# The 'client' fixture will now be provided by tests/conftest.py
 
 def test_dashboard(client):
+    """Test dashboard page loads correctly."""
     rv = client.get('/dashboard')
     assert rv.status_code == 200
-    assert b'Dashboard' in rv.data
+    assert b'Vis\xc3\xa3o Geral' in rv.data # Check for "Visão Geral"
 
 def test_expenses_page(client):
-    """Test that the expenses page loads without error (verifying the macro fix)."""
+    """Test that the expenses page loads without error and form elements are present."""
     rv = client.get('/expenses')
     assert rv.status_code == 200
-    assert b'Adicionar Novo' in rv.data
-    # Check if the step attribute was rendered correctly
+    assert b'Novo Lan\xc3\xa7amento' in rv.data # Check for "Novo Lançamento" in bytes
+    # Check if the step attribute was rendered correctly for amount input
     assert b'step="0.01"' in rv.data
