@@ -1,0 +1,122 @@
+{% extends 'layouts/base.html' %}
+{% import 'components/forms.html' as forms %}
+{% import 'components/icons.html' as icons %}
+
+{% block content %}
+<div class="flex items-center justify-between mb-6">
+    <h2 class="text-lg font-bold tracking-tight">Gerenciar Despesas</h2>
+    {% if edit_expense %}
+        <a href="{{ url_for('expenses') }}" class="btn btn-outline btn-sm">
+            Cancelar Edição
+        </a>
+    {% endif %}
+</div>
+
+<div class="grid grid-sidebar gap-6">
+    
+    <!-- LEFT: Sticky Form -->
+    <div class="h-full">
+        <div class="card sticky top-20" style="{% if edit_expense %}border-color: var(--primary);{% endif %}"> 
+            <div class="card-header border-b border-border py-3">
+                <h3 class="card-title text-sm">
+                    {% if edit_expense %}Editar Lançamento #{{ edit_expense.id }}{% else %}Adicionar Novo{% endif %}
+                </h3>
+            </div>
+            <div class="card-content p-4">
+                <form action="{{ url_for('expenses') }}" method="POST" class="grid gap-3">
+                    {% if edit_expense %}
+                        <input type="hidden" name="expense_id" value="{{ edit_expense.id }}">
+                    {% endif %}
+
+                    {{ forms.input('description', 'Descrição', 
+                        value=edit_expense.description if edit_expense else '', 
+                        placeholder='Ex: Almoço', required=True) 
+                    }}
+                    
+                    <div class="grid grid-cols-2 gap-3">
+                        {{ forms.input('amount', 'Valor', type='number', 
+                            value=edit_expense.amount if edit_expense else '', 
+                            placeholder='0.00', required=True, step='0.01') 
+                        }}
+                        {{ forms.input('expense_date', 'Data', type='date', 
+                            value=edit_expense.expense_date if edit_expense else today, 
+                            required=True) 
+                        }}
+                    </div>
+                    
+                    {{ forms.select('category', 'Categoria', categories, 
+                        selected=edit_expense.category if edit_expense else None, 
+                        required=True) 
+                    }}
+                    {{ forms.select('payment_type', 'Meio', payment_types, 
+                        selected=edit_expense.payment_type if edit_expense else None, 
+                        required=True) 
+                    }}
+                    
+                    <button type="submit" class="btn {% if edit_expense %}btn-secondary{% else %}btn-primary{% endif %} w-full mt-2 text-sm">
+                        {{ icons.icon('check', class='mr-2') }} 
+                        {% if edit_expense %}Atualizar{% else %}Salvar{% endif %}
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- RIGHT: History Table -->
+    <div class="card min-h-[500px]">
+        <div class="card-header border-b border-border py-3 flex-row justify-between items-center">
+            <h3 class="card-title text-sm">Histórico Completo</h3>
+            <span class="text-xs text-muted">{{ expenses|length }} registros</span>
+        </div>
+        <div class="table-container">
+            <table class="table table-compact">
+                <thead>
+                    <tr>
+                        <th style="width: 100px;">Data</th>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th class="text-right">Valor</th>
+                        <th style="width: 80px;" class="text-right">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for expense in expenses %}
+                    <tr {% if edit_expense and edit_expense.id == expense.id %}style="background-color: var(--muted);"{% endif %}>
+                        <td class="text-muted font-medium text-xs">
+                            {{ expense.expense_date | date_br }}
+                        </td>
+                        <td>
+                            <div class="font-medium text-sm">{{ expense.description }}</div>
+                            <div class="text-xs text-muted md:hidden">{{ expense.payment_type }}</div>
+                        </td>
+                        <td>
+                            <span class="badge badge-outline text-xs text-muted font-normal">{{ expense.category }}</span>
+                        </td>
+                        <td class="text-right font-medium text-sm">
+                            {{ expense.amount | currency }}
+                        </td>
+                        <td class="text-right whitespace-nowrap">
+                            <a href="{{ url_for('expenses', edit=expense.id) }}" class="btn btn-ghost btn-sm btn-icon text-muted hover:text-foreground inline-flex" title="Editar">
+                                {{ icons.icon('pencil-simple') }}
+                            </a>
+                            
+                            <form action="{{ url_for('delete_expense', id=expense.id) }}" method="POST" onsubmit="return confirm('Confirmar exclusão?');" style="display: inline-flex;">
+                                <button type="submit" class="btn btn-ghost btn-sm btn-icon text-muted hover:text-destructive" title="Excluir">
+                                    {{ icons.icon('trash') }}
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="5" class="text-center p-12 text-muted">
+                            <p class="text-sm">Nenhum lançamento encontrado.</p>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

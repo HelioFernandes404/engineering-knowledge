@@ -1,0 +1,67 @@
+{% extends 'layouts/base.html' %}
+{% import 'components/forms.html' as forms %}
+{% import 'components/icons.html' as icons %}
+
+{% block content %}
+<div class="mb-8 border-b border-border pb-4">
+    <h2 class="text-xl font-bold tracking-tight">Configurações</h2>
+    <p class="text-muted text-sm mt-1">Gerencie suas preferências e metas financeiras.</p>
+</div>
+
+<div class="grid grid-sidebar">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar-nav">
+        <a href="#" class="sidebar-item active">
+            Geral
+        </a>
+        <a href="#" class="sidebar-item cursor-not-allowed" title="Em breve">
+            Categorias
+        </a>
+        <a href="#" class="sidebar-item cursor-not-allowed" title="Em breve">
+            Aparência
+        </a>
+        <a href="#" class="sidebar-item cursor-not-allowed" title="Em breve">
+            Notificações
+        </a>
+    </aside>
+
+    <!-- Main Content Area -->
+    <div class="space-y-6">
+        <div class="card">
+            <div class="card-header border-b border-border py-4">
+                <h3 class="card-title">Orçamento Mensal</h3>
+                <p class="card-description">Defina sua meta de gastos para calcular o saldo restante.</p>
+            </div>
+            <div class="card-content">
+                <form action="{{ url_for('settings') }}" method="POST" class="grid gap-4 max-w-md">
+                    
+                    {{ forms.input('monthly_budget', 'Limite Mensal (R$)', type='number', value=monthly_budget, placeholder='0.00', required=True, step='0.01') }}
+                    
+                    <div class="flex items-center gap-2 mt-2">
+                        <button type="submit" class="btn btn-primary">
+                            {{ icons.icon('floppy-disk', class='mr-2') }} Salvar Alterações
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Placeholder for future section to show layout potential -->
+        <div class="card opacity-60">
+            <div class="card-header border-b border-border py-4">
+                <h3 class="card-title">Zona de Perigo</h3>
+                <p class="card-description">Ações irreversíveis.</p>
+            </div>
+            <div class="card-content flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium">Resetar todos os dados</p>
+                    <p class="text-xs text-muted">Isso apagará todas as despesas.</p>
+                </div>
+                <button disabled class="btn btn-destructive btn-sm opacity-50 cursor-not-allowed">
+                    Resetar Dados
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,137 @@
+{% extends 'layouts/base.html' %}
+{% import 'components/cards.html' as cards %}
+{% import 'components/icons.html' as icons %}
+
+{% block content %}
+<div class="flex items-center justify-between mb-8">
+    <div>
+        <h2 class="text-lg font-bold tracking-tight">Visão Geral</h2>
+        <!-- Month Navigator -->
+        <div class="flex items-center gap-2 mt-1">
+            <a href="{{ url_for('dashboard', month=prev_month) }}" class="btn btn-ghost btn-sm btn-icon" title="Mês Anterior">
+                {{ icons.icon('caret-left') }}
+            </a>
+            <span class="text-sm font-medium text-foreground min-w-[120px] text-center capitalize">
+                {{ current_date | month_br }}
+            </span>
+            <a href="{{ url_for('dashboard', month=next_month) }}" class="btn btn-ghost btn-sm btn-icon" title="Próximo Mês">
+                {{ icons.icon('caret-right') }}
+            </a>
+            
+            {% if current_date.strftime('%Y-%m') != now().strftime('%Y-%m') %}
+            <a href="{{ url_for('dashboard') }}" class="text-xs text-muted hover:text-foreground ml-2">
+                Voltar para hoje
+            </a>
+            {% endif %}
+        </div>
+    </div>
+    <div class="flex items-center gap-2">
+         <a href="{{ url_for('settings') }}" class="btn btn-outline btn-sm">
+            {{ icons.icon('gear', class='mr-2') }} Ajustar Orçamento
+        </a>
+        <a href="{{ url_for('expenses') }}" class="btn btn-primary btn-sm">
+            {{ icons.icon('plus', class='mr-2') }} Nova Despesa
+        </a>
+    </div>
+</div>
+
+<!-- HERO SECTION: Consolidated Financial Health -->
+<div class="card mb-8">
+    <div class="card-content">
+        <div class="flex flex-col md:flex-row justify-between items-end gap-6">
+            
+            <!-- Main Stat: Remaining -->
+            <div class="flex-1 w-full">
+                <p class="text-sm font-medium text-muted mb-1">Saldo Restante</p>
+                <div class="stat-hero-value {% if remaining < 0 %}text-danger{% else %}text-success{% endif %}">
+                    {{ remaining | currency }}
+                </div>
+                <div class="stat-hero-sub mt-2">
+                    <span>Gasto: <strong>{{ total_spent | currency }}</strong></span>
+                    <span class="text-muted">/</span>
+                    <span>Orçamento: <strong>{{ budget | currency }}</strong></span>
+                </div>
+            </div>
+
+            <!-- Visual Progress -->
+            <div class="flex-1 w-full md:max-w-md">
+                <div class="flex justify-between text-xs font-medium text-muted mb-2">
+                    <span>{{ percentage | round(0) }}% utilizado</span>
+                    <span>{% if remaining < 0 %}Estourado{% else %}Dentro da meta{% endif %}</span>
+                </div>
+                <div class="progress-bg">
+                    <div class="progress-fill {% if remaining < 0 %}danger{% else %}success{% endif %}" style="width: {{ [percentage, 100] | min }}%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ASYMMETRIC GRID: History (Primary) + Breakdown (Secondary) -->
+<div class="grid grid-dashboard">
+    
+    <!-- LEFT: Recent Transactions -->
+    <div class="card h-full">
+        <div class="card-header flex-row items-center justify-between py-4 border-b border-border">
+            <h3 class="card-title">Transações de {{ current_date.strftime('%B') }}</h3>
+            <a href="{{ url_for('expenses') }}" class="text-xs text-muted hover:text-foreground">Ver todas</a>
+        </div>
+        <div class="table-container">
+            <table class="table table-compact">
+                <thead>
+                    <tr>
+                        <th style="width: 40%">Descrição</th>
+                        <th>Categoria</th>
+                        <th class="text-right">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for expense in expenses %}
+                    <tr>
+                        <td>
+                            <div class="font-medium truncate" style="max-width: 200px;">{{ expense.description }}</div>
+                            <div class="text-xs text-muted">{{ expense.expense_date | date_br }}</div>
+                        </td>
+                        <td>
+                            <span class="badge badge-secondary text-xs">{{ expense.category }}</span>
+                        </td>
+                        <td class="text-right font-medium">
+                            {{ expense.amount | currency }}
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="3" class="text-center p-8 text-muted text-sm">
+                            Nenhuma movimentação neste mês.
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- RIGHT: Category Breakdown -->
+    <div class="card h-full">
+        <div class="card-header border-b border-border py-4">
+            <h3 class="card-title">Por Categoria</h3>
+        </div>
+        <div class="card-content flex flex-col gap-4">
+            {% for category, amount in category_stats.items() %}
+            <div class="space-y-1">
+                <div class="flex items-center justify-between text-sm">
+                    <span class="font-medium">{{ category }}</span>
+                    <span>{{ amount | currency }}</span>
+                </div>
+                <div class="progress-bg" style="height: 0.25rem;">
+                    <div class="progress-fill" style="width: {{ (amount / total_spent * 100) if total_spent > 0 else 0 }}%; background-color: var(--foreground);"></div>
+                </div>
+            </div>
+            {% else %}
+            <div class="text-center text-muted text-sm py-8">Sem dados.</div>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+{% endblock %}

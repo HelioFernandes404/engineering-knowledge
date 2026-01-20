@@ -1,0 +1,41 @@
+{% macro input(name, label, type='text', value='', placeholder='', required=False) %}
+<div class="grid gap-2">
+    <label for="{{ name }}" class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+        {{ label }}
+    </label>
+    <input 
+        type="{{ type }}" 
+        name="{{ name }}" 
+        id="{{ name }}" 
+        value="{{ value }}"
+        class="input" 
+        placeholder="{{ placeholder }}"
+        {% if required %}required{% endif %}
+        {% for key, val in kwargs.items() %}
+            {{ key }}="{{ val }}"
+        {% endfor %}
+    >
+</div>
+{% endmacro %}
+
+{% macro select(name, label, options, selected=None, required=False) %}
+<div class="grid gap-2">
+    <label for="{{ name }}" class="text-sm font-medium leading-none">
+        {{ label }}
+    </label>
+    <div style="position: relative;">
+        <select name="{{ name }}" id="{{ name }}" class="input" style="-webkit-appearance: none; appearance: none; background-color: transparent;" {% if required %}required{% endif %}
+            {% for key, val in kwargs.items() %}
+                {{ key }}="{{ val }}"
+            {% endfor %}
+        >
+            {% for opt in options %}
+                <option value="{{ opt }}" {% if selected == opt %}selected{% endif %}>{{ opt }}</option>
+            {% endfor %}
+        </select>
+        <div style="position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%); pointer-events: none;">
+            <i class="ph-bold ph-caret-down text-muted"></i>
+        </div>
+    </div>
+</div>
+{% endmacro %}
