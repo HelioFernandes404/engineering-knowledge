@@ -32,14 +32,20 @@ def load_ssh_config(alias: str, ssh_config_path: Optional[str] = None) -> Dict[s
     if ssh_config_path is None:
         ssh_config_path = os.path.expanduser("~/.ssh/config")
 
+    logger.debug(f"Loading SSH config from: {ssh_config_path}")
+    logger.debug(f"Looking up host alias: {alias}")
+
     cfg: Dict[str, Any] = {}
     if not os.path.exists(ssh_config_path):
+        logger.warning(f"SSH config file not found: {ssh_config_path}")
         return cfg
 
     with open(ssh_config_path) as f:
         sc = SSHConfig()
         sc.parse(f)
         cfg = dict(sc.lookup(alias))
+
+    logger.debug(f"SSH config resolved: hostname={cfg.get('hostname', 'N/A')}, user={cfg.get('user', 'N/A')}, port={cfg.get('port', 'N/A')}")
 
     return cfg
 
@@ -115,21 +121,32 @@ def make_ssh_client(
     # Retry with exponential backoff
     for attempt in range(1, max_retries + 1):
         try:
-            logger.debug(f"SSH connection attempt {attempt}/{max_retries} to {hostname}:{port}")
+            logger.debug(f"SSH connection attempt {attempt}/{max_retries}")
+            logger.debug(f"  hostname: {hostname}")
+            logger.debug(f"  username: {username}")
+            logger.debug(f"  port: {port}")
+            logger.debug(f"  key_filename: {key_filename}")
+            logger.debug(f"  proxycmd: {proxycmd}")
+            logger.debug(f"  timeout: {timeout}s")
+
             client.connect(hostname, **connect_kwargs)
-            logger.debug(f"SSH connection successful on attempt {attempt}")
+            logger.info(f"✓ SSH connection successful to {username}@{hostname}:{port}")
             return client
         except (paramiko.ssh_exception.NoValidConnectionsError,
                 paramiko.ssh_exception.SSHException,
                 OSError,
                 TimeoutError) as e:
             if attempt == max_retries:
-                logger.error(f"SSH connection failed after {max_retries} attempts: {e}")
+                logger.error(f"✗ SSH connection failed after {max_retries} attempts")
+                logger.error(f"  Target: {username}@{hostname}:{port}")
+                logger.error(f"  Error: {e}")
+                logger.error(f"  Error type: {type(e).__name__}")
                 raise
 
             # Exponential backoff: 1s, 2s, 4s
             wait_time = 2 ** (attempt - 1)
-            logger.warning(f"SSH connection failed (attempt {attempt}): {e}. Retrying in {wait_time}s...")
+            logger.warning(f"SSH connection failed (attempt {attempt}/{max_retries}): {e}")
+            logger.debug(f"Retrying in {wait_time}s...")
             time.sleep(wait_time)
 
 

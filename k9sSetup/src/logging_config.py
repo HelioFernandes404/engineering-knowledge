@@ -6,13 +6,13 @@ from pathlib import Path
 from typing import Optional
 
 
-def setup_logging(level: int = logging.INFO, verbose: bool = False, log_file: Optional[str] = None) -> logging.Logger:
+def setup_logging(level: int = logging.DEBUG, verbose: bool = False, log_file: Optional[str] = None) -> logging.Logger:
     """
     Configure logging for k9s-config.
 
     Args:
-        level: Logging level (default: INFO)
-        verbose: If True, use DEBUG level
+        level: Logging level (default: DEBUG)
+        verbose: If True, use DEBUG level (deprecated - DEBUG is now default)
         log_file: Optional path to log file (if provided, logs to file + stderr)
 
     Returns:
