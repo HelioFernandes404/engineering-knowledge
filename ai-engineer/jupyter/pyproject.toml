@@ -9,6 +9,7 @@ dependencies = []
 [dependency-groups]
 dev = [
     "ipykernel>=7.1.0",
+    "jupyter",
 ]
 
 [tool.uv.workspace]
@@ -16,3 +17,6 @@ members = [
     "calc-cells",
     "calc-jupyter",
 ]
+
+[tool.uv.sources]
+jupyter = { workspace = true }
