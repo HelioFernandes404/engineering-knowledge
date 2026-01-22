@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  minibudget:
+    build: .
+    container_name: minibudget-app
+    ports:
+      - "7373:7373"
+    volumes:
+      # Mount the current directory to preserve the database
+      - ./minibudget.sqlite:/app/minibudget.sqlite
+      # Mount logs if needed
+      - ./server.log:/app/server.log
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=production
+      - SECRET_KEY=${SECRET_KEY:-dev_key_very_secret}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:7373')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
