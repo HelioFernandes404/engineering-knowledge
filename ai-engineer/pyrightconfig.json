@@ -1,0 +1,21 @@
+{
+    "typeCheckingMode": "basic",
+  
+    "useLibraryCodeForTypes": true,
+  
+    "reportMissingTypeStubs": false,
+    "reportUnknownMemberType": false,
+    "reportUnknownParameterType": false,
+    "reportUnknownVariableType": false,
+    "reportGeneralTypeIssues": false,
+  
+    "exclude": [
+      "**/node_modules",
+      "**/__pycache__",
+      "**/.venv",
+      "**/venv",
+      "**/build",
+      "**/dist"
+    ]
+  }
+  
