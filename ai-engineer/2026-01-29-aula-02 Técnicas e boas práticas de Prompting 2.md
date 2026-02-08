@@ -1,0 +1,17 @@
+## Notas 
+- Short-term memory
+- Long-term memory 
+	- Rules
+	- LLM e stataless ( nao agurda estado )
+	- Rules coloca oq realmente e seguido no projeto o que realmente tem. 
+- exemplos de roles:
+	- code-standers.md
+	- estrutura-projeto
+	- http
+	- logging
+	- node
+	- react
+	- sql
+	- test
+---
+- 14:19

@@ -1,0 +1,2 @@
+- tenho um problema ou feature
+- posso ir estudando e anotado como um prompt usando tags de xml e tabem de markdwon assim faco 1 trabalho em 2. 
