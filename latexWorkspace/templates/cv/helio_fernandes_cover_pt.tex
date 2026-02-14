@@ -1,0 +1,101 @@
+%-------------------------
+% Cover Letter in LaTeX
+% Based on resume template by Jake Gutierrez
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[brazilian]{babel}
+\usepackage{tabularx}
+\usepackage[sfdefault]{noto-sans}
+\usepackage{parskip}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+
+\pdfgentounicode=1
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    \textbf{\Huge \scshape Hélio Fernandes} \\ \vspace{4pt}
+    \small Pernambuco, Brasil $|$
+    \href{mailto:heliofer25@icloud.com}{\underline{heliofer25@icloud.com}} $|$
+    \href{https://www.linkedin.com/in/heliofernandes/}{\underline{linkedin.com/in/heliofernandes}} $|$
+    \href{https://github.com/HelioFernandes404}{\underline{github.com/HelioFernandes404}}
+\end{center}
+
+\vspace{20pt}
+
+%----------DATE----------
+\today
+
+\vspace{20pt}
+
+%----------RECIPIENT (customize per application)----------
+% Equipe de Recrutamento \\
+% [Nome da Empresa] \\
+% [Endereço]
+
+%----------GREETING----------
+Prezada equipe de recrutamento,
+
+\vspace{12pt}
+
+%----------OPENING PARAGRAPH----------
+Escrevo para expressar meu interesse na posição de Software Engineer em sua empresa. Com mais de 5 anos de experiência em desenvolvimento full-stack e infraestrutura, tenho trabalhado na interseção entre engenharia de software, DevOps e IA -- áreas que acredito serem fundamentais para empresas que buscam escalar com qualidade.
+
+\vspace{12pt}
+
+%----------BODY PARAGRAPH 1: Current Role & Impact----------
+Atualmente na SystemFrame, lidero iniciativas técnicas que impactam diretamente o negócio: migrei nossa infraestrutura de Docker para Kubernetes, reduzindo a taxa de erros em 45\% e alcançando mais de 180 dias de uptime com SLA de 98\%. Arquitetei uma plataforma de observabilidade que atende mais de 10 clientes enterprise (~1.200 servidores), processando milhões de métricas diariamente. Também automatizei o onboarding de novos clientes, reduzindo o tempo de deploy de dias para horas.
+
+\vspace{12pt}
+
+%----------BODY PARAGRAPH 2: Previous Experience & AI----------
+Antes disso, na DAI-TEC, tive a oportunidade de trabalhar com IA Generativa antes do boom atual. Desenvolvi assistentes conversacionais com LLMs, RAG e LangChain para 5 clientes de CRM, cada um operando múltiplos assistentes em produção. Essa experiência me deu uma base sólida em engenharia de ML aplicada -- desde prompt engineering até observabilidade de modelos em produção.
+
+\vspace{12pt}
+
+%----------BODY PARAGRAPH 3: Why This Company (customize)----------
+O que me atrai em startups e empresas em crescimento é a oportunidade de ter impacto real e visível. Gosto de ambientes onde posso contribuir além do código: participando de decisões de arquitetura, ajudando a definir processos e colaborando diretamente com produto. Acredito que minha experiência em construir sistemas escaláveis do zero, combinada com meu background em IA, pode agregar valor significativo ao time.
+
+\vspace{12pt}
+
+%----------CLOSING PARAGRAPH----------
+Agradeço a oportunidade de apresentar minha candidatura e fico à disposição para uma conversa sobre como posso contribuir com os desafios técnicos da empresa.
+
+\vspace{20pt}
+
+%----------SIGNATURE----------
+Atenciosamente,
+
+\vspace{10pt}
+
+Hélio Fernandes
+
+\end{document}
