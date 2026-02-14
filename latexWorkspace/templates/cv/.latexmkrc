@@ -1,7 +1,4 @@
-# Configuração para gerar helio_fernandes_pt.pdf
+# Configuração para gerar PDFs do CV
 $pdf_mode = 1;
 $pdflatex = 'pdflatex -interaction=nonstopmode';
 $out_dir = '.';
-
-# Define o nome do arquivo de saída
-$jobname = 'helio_fernandes_pt';
