@@ -182,6 +182,7 @@ INPUT /usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Italic-tlf-ot1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Italic-tlf-ot1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Regular-tlf-ot1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Bold-tlf-ot1.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Regular-tlf-ot1.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/google/noto/NotoSans-Bold-tlf-sc-ot1.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Bold-tlf-sc-ot1--base.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
