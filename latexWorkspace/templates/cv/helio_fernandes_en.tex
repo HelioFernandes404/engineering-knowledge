@@ -20,6 +20,7 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
+\definecolor{cvlinkblue}{RGB}{26,115,232}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -57,7 +58,7 @@
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that generated PDF is machine readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -72,7 +73,22 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#3} & \textbf{\footnotesize #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Experience header in 2 rows and 3 columns:
+% row 1: role | company (optional link) | date
+% row 2: area | location                | optional date
+\newcommand{\cvBlueLink}[2]{\textcolor{cvlinkblue}{\href{#1}{#2}}}
+
+\newcommand{\resumeExperienceHeading}[7]{
+  \vspace{2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+      \textbf{#1} &
+      \textbf{\if\relax\detokenize{#2}\relax #3\else\cvBlueLink{#2}{#3}\fi} &
+      \textbf{\footnotesize #4} \\
+      \textit{\small#5} & \textit{\small #6} & \textit{\small #7} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -86,7 +102,7 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small#1 & \textbf{\footnotesize #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -119,61 +135,61 @@
 \section{Experience}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Software Engineer}{2023 -- Present}
-      {SystemFrame}{Remote}
+    \resumeExperienceHeading
+      {Software Engineer}{https://systemframe.com.br/}{{\footnotesize observability platform}}{2023 -- Present}
+      {\cvBlueLink{https://systemframe.com.br}{SystemFrame}}{{\footnotesize Remote}}{}
       \resumeItemListStart
-        \resumeItem{Led migration from Docker to Kubernetes (K3s) in multi-tenant infrastructure, \textbf{reducing error rate by 45\%} and achieving \textbf{180+ days uptime} with 98\% SLA}
-        \resumeItem{Architected observability platform for \textbf{10+ enterprise clients} (~1,200 servers), processing millions of metrics/logs with VictoriaMetrics and custom Prometheus exporters}
-        \resumeItem{Built custom exporters for multiple network providers (Aruba, Meraki, Zabbix), unifying heterogeneous infrastructure metrics into centralized dashboards}
-        \resumeItem{Designed alerting pipeline integrating GLPI and ServiceNow with Redis deduplication, \textbf{reducing duplicate tickets by 95\%} and accelerating N1/N2 team response time}
-        \resumeItem{Created executive dashboards for leadership with SLA, availability and performance metrics, enabling real-time data-driven decision making}
-        \resumeItem{Automated complete client onboarding flow via Terraform/Ansible and GitOps (ArgoCD/Helm), \textbf{reducing deployment time from days to hours}}
-        \resumeItem{\textbf{Skills:} Python, TypeScript, Kubernetes, Terraform, Ansible, AWS, VictoriaMetrics, Prometheus, ArgoCD}
+        \resumeItem{Led the migration from Docker to Kubernetes in a multi-tenant infrastructure, achieving a \textbf{45\% reduction in errors} and \textbf{180+ days of uptime}}
+        \resumeItem{Drove the architectural decision to use K3s instead of managed Kubernetes for cost efficiency, sustaining a 98\% SLA for enterprise clients}
+        \resumeItem{Architected an observability platform for \textbf{10+ enterprise clients} (~1,200 servers), processing millions of metrics/logs with VictoriaMetrics and custom Prometheus exporters}
+        \resumeItem{Developed custom exporters for multiple network providers (Aruba, Meraki, Zabbix), unifying heterogeneous infrastructure metrics into centralized dashboards}
+        \resumeItem{Co-led the alert pipeline implementation integrating GLPI and ServiceNow with Redis deduplication, \textbf{eliminating 95\% of duplicate tickets} and reducing N1/N2 response time \textbf{from 60 min to 15 min}}
+        \resumeItem{Built executive dashboards with SLA, availability, and performance metrics, enabling real-time data-driven decisions}
+        \resumeItem{Automated the full client onboarding flow using Terraform/Ansible and GitOps (ArgoCD/Helm), \textbf{reducing deployment time from 3 days to 4 hours}}
+        \resumeItem{\textbf{Skills:} Python, Kubernetes, Elasticsearch, Terraform, Microservices, AWS, Redis, ArgoCD, PostgreSQL}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Full Stack Developer}{2019 -- 2023}
-      {DAI-TEC}{On-site/Remote}
+    \resumeExperienceHeading
+      {Software Engineer}{https://dai.tec.br/}{{\footnotesize AI assistants platform}}{2022 -- 2023}
+      {\cvBlueLink{https://dai.tec.br/}{DAI-TEC}}{{\footnotesize Full-time/Remote}}{}
       \resumeItemListStart
-        \resumeItem{Architected AI assistant platform for \textbf{5 CRM clients}, each running 2+ conversational assistants in production with LLMs, RAG (LlamaIndex) and LangChain}
-        \resumeItem{Built integrations with Stripe for payments and WhatsApp Business API for automated support, processing thousands of monthly interactions}
-        \resumeItem{Implemented ML pipelines with MLflow monitoring, \textbf{achieving 23\% reduction in response time} and inference cost optimization on AWS}
-        \resumeItem{Built scalable microservices architecture with Node.js and Python, maintaining \textbf{zero critical incidents} in production}
-        \resumeItem{Collaborated in teams of up to 10 people (2 squads), implementing full observability with Prometheus/Grafana for model monitoring}
-        \resumeItem{\textbf{Skills:} Python, LangChain, LlamaIndex, React, Node.js, AWS, MongoDB, Prometheus, Grafana}
+        \resumeItem{Architected an AI assistant platform for \textbf{5 CRM clients}, each running 2+ conversational assistants in production using LLMs, RAG (LlamaIndex), and LangChain}
+        \resumeItem{Built integrations with Stripe for payments and WhatsApp Business API for automated support, processing \textbf{~5,000 monthly interactions}}
+        \resumeItem{Implemented ML pipelines with MLflow monitoring, \textbf{achieving a 23\% reduction in response time} and inference cost optimization on AWS}
+        \resumeItem{Built a scalable microservices architecture with Node.js, maintaining \textbf{zero critical incidents} in production}
+        \resumeItem{Acted as a technical reference in a 10-person team (2 squads), leading code reviews, defining architecture standards, and mentoring junior developers}
+        \resumeItem{\textbf{Skills:} React, TypeScript, Node.js, AWS, MongoDB, LLMs, AI Engineering}
+    \resumeItemListEnd
+
+    \resumeExperienceHeading
+      {Full Stack Developer}{https://crop2u.com}{{\footnotesize crop2u}}{2021 -- 2022}
+      {\cvBlueLink{https://www.linkedin.com/company/creathdigital/?originalSubdomain=br}{Creath Digital}}{{\footnotesize Full-time/Remote}}{}
+      \resumeItemListStart
+        \resumeItem{Defined the automated testing strategy (unit, integration, and E2E with Playwright), \textbf{reducing bugs reaching production} by standardizing quality and coverage criteria with the team}
+        \resumeItem{Structured the development flow around TDD and pair programming, \textbf{increasing release stability} by validating critical scenarios from the start of each feature}
+        \resumeItem{Proposed and co-led real-time notifications via WebSocket, \textbf{improving product experience} by replacing manual refreshes with real-time events}
+        \resumeItem{Delivered Angular/Node.js features with a continuous quality focus, \textbf{reducing team rework} by combining implementation, technical review, and testing}
+        \resumeItem{\textbf{Skills:} Angular, TypeScript, Node.js, AWS, MongoDB, E2E, Playwright}
     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
 
-%-----------TECHNICAL SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, TypeScript, JavaScript, SQL, HTML/CSS} \\
-     \textbf{Frameworks}{: React, Next.js, Node.js, Express, Flask, LangChain, LlamaIndex} \\
-     \textbf{DevOps \& Cloud}{: Kubernetes, Docker, Terraform, Ansible, Helm, AWS, ArgoCD, GitHub Actions} \\
-     \textbf{Databases}{: PostgreSQL, MongoDB, DynamoDB, Redis, VictoriaMetrics} \\
-     \textbf{Observability}{: Prometheus, Grafana, AlertManager, OpenTelemetry, Zabbix} \\
-     \textbf{Languages}{: Portuguese (Native), English (Intermediate)}
-    }}
- \end{itemize}
-
-%-----------BEYOND WORK-----------
-\section{Beyond Work}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Technical blogging} on \href{https://medium.com/@heliosuns404}{\underline{medium.com/@heliosuns404}}. I write articles about software engineering, AI and productivity workflows. \\
-     \textbf{Open Source:} \href{https://github.com/HelioFernandes404/tracker-habit}{\underline{Habit Tracker}} -- Open-source alternative to Notion for habit tracking, built with focus on simplicity and privacy.
-    }}
- \end{itemize}
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Technical Blog} $|$ \emph{\href{https://medium.com/@heliosuns404}{\underline{medium.com/@heliosuns404}}}}{Publications}
+          \resumeItemListStart
+            \resumeItem{Articles on software engineering, AI, and productivity workflows for developers}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {UNIFAEL}{Sao Paulo, Brazil}
+      {UNIFAEL}{{\footnotesize Sao Paulo, SP}}
       {Bachelor of Science in Computer Science}{Oct. 2022 -- Present}
   \resumeSubHeadingListEnd
 
