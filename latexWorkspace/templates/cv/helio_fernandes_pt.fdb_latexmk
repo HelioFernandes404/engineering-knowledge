@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1771471565.24896 "/home/helio/Work/HelioFernandes404/engineering-knowledge/latexWorkspace/templates/cv/helio_fernandes_pt.tex" "helio_fernandes_pt.pdf" "helio_fernandes_pt" 1771471565.66059 0
-  "/home/helio/Work/HelioFernandes404/engineering-knowledge/latexWorkspace/templates/cv/helio_fernandes_pt.tex" 1771471565.16162 9169 d2f52892c09f38a16c635d63140d5214 ""
+["pdflatex"] 1771471812.42632 "/home/helio/Work/HelioFernandes404/engineering-knowledge/latexWorkspace/templates/cv/helio_fernandes_pt.tex" "helio_fernandes_pt.pdf" "helio_fernandes_pt" 1771471812.83312 0
+  "/home/helio/Work/HelioFernandes404/engineering-knowledge/latexWorkspace/templates/cv/helio_fernandes_pt.tex" 1771471812.35227 9207 52474cf42f8c50271846d4e85ced6a68 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/noto/a_lefphz.enc" 1767555874 3171 bdf672c76cb4764e5d6f3e9f9bc8b1d6 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/noto/a_wcjgjy.enc" 1767555874 2864 74e96fe61cd478c270a005253f03d4c7 ""
   "/usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Bold-tlf-ot1.tfm" 1767555874 3740 f81e3021527b6bf09899d28d9322cd20 ""
@@ -99,9 +99,9 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1767555874 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1768090433 5306604 df2447a3a3aadc3acfc686cd8dc19dd6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1768090383 2008250 b8a526a645089a038406b8260d067b41 ""
-  "helio_fernandes_pt.aux" 1771471565.60762 601 3bf91d175346b000912b43b73a527d3c "pdflatex"
-  "helio_fernandes_pt.out" 1771471565.60862 273 177b40d0121a3228f5e7fdaa7601c5d1 "pdflatex"
-  "helio_fernandes_pt.tex" 1771471565.16162 9169 d2f52892c09f38a16c635d63140d5214 ""
+  "helio_fernandes_pt.aux" 1771471812.78226 601 3bf91d175346b000912b43b73a527d3c "pdflatex"
+  "helio_fernandes_pt.out" 1771471812.78226 273 177b40d0121a3228f5e7fdaa7601c5d1 "pdflatex"
+  "helio_fernandes_pt.tex" 1771471812.35227 9207 52474cf42f8c50271846d4e85ced6a68 ""
   (generated)
   "helio_fernandes_pt.aux"
   "helio_fernandes_pt.log"
