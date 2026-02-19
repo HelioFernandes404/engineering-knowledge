@@ -1,7 +1,7 @@
 PWD /home/helio/Work/HelioFernandes404/engineering-knowledge/latexWorkspace/templates/cv
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT helio_fernandes_pt.tex
+INPUT /home/helio/Work/HelioFernandes404/engineering-knowledge/latexWorkspace/templates/cv/helio_fernandes_pt.tex
 OUTPUT helio_fernandes_pt.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
@@ -176,6 +176,8 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Bold-tlf-ot1.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Italic-tlf-ot1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Italic-tlf-ot1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Italic-tlf-ot1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/google/noto/NotoSans-Regular-tlf-ot1.tfm
