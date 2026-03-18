@@ -1,0 +1,169 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\definecolor{cvlinkblue}{RGB}{26,115,232}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{5pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textbf{\footnotesize #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\cvBlueLink}[2]{\textcolor{cvlinkblue}{\href{#1}{#2}}}
+
+\newcommand{\resumeExperienceHeading}[7]{
+  \vspace{2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+      \textbf{#1} &
+      \textbf{\if\relax\detokenize{#2}\relax #3\else\cvBlueLink{#2}{#3}\fi} &
+      \textbf{\footnotesize #4} \\
+      \textit{\small#5} & \textit{\small #6} & \textit{\small #7} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=1pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Hélio Fernandes} \\ \vspace{4pt}
+    \small Pernambuco, Brasil $|$
+    \href{mailto:heliofer25@icloud.com}{\underline{heliofer25@icloud.com}} $|$
+    \href{https://www.linkedin.com/in/heliofernandes/}{\underline{linkedin.com/in/heliofernandes}} $|$
+    \href{https://github.com/HelioFernandes404}{\underline{github.com/HelioFernandes404}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Resumo}
+\small Platform Engineer com \textbf{4+ anos} construindo sistemas de produ\c{c}\~ao para SaaS e ambientes operacionais cr\'iticos. Hoje lidero padroniza\c{c}\~ao de deploys multi-tenant com \textbf{Kubernetes/K3s}, \textbf{Helm}, \textbf{ArgoCD} e \textbf{Ansible}, al\'em de refor\c{c}ar confiabilidade de observabilidade e pipeline de alertas em produ\c{c}\~ao. Backend \'e minha segunda frente: na DAI entreguei billing recorrente com Stripe, APIs em Node.js/TypeScript e deploy em AWS/ECS via GitHub Actions.
+
+%-----------EXPERIENCE-----------
+\section{Experi\^encia}
+  \resumeSubHeadingListStart
+
+    \resumeExperienceHeading
+      {Software Engineer}{https://systemframe.com.br/}{SystemFrame}{2023 -- Presente}
+      {{\footnotesize plataforma de observabilidade para ambientes multi-tenant e opera\c{c}\~ao enterprise}}{{\footnotesize Remoto}}{}
+      \resumeItemListStart
+        \resumeItem{Assumo ownership da camada de plataforma com \textbf{Kubernetes/K3s}, \textbf{Helm}, \textbf{ArgoCD} e \textbf{Ansible}, definindo um fluxo reprodut\'ivel de deploy e configura\c{c}\~ao por cliente entre ambientes.}
+        \resumeItem{Desenvolvi componentes de observabilidade em \textbf{Python}, incluindo exporters Prometheus e integra\c{c}\~oes para Aruba, Meraki, Zabbix e GLPI, consolidando coleta de m\'etricas em infraestruturas heterog\^eneas.}
+        \resumeItem{Reforcei a confiabilidade do pipeline de alertas entre Alertmanager, GLPI e ServiceNow com deduplica\c{c}\~ao, isolamento multi-tenant e corre\c{c}\~oes de concorr\^encia, reduzindo ru\'ido operacional e retrabalho do suporte.}
+        \resumeItem{Criei ferramentas de an\'alise de telemetria e investiga\c{c}\~ao operacional para APIs compat\'iveis com Prometheus/VictoriaMetrics, acelerando diagn\'ostico de incidentes e troubleshooting em produ\c{c}\~ao.}
+        \resumeItem{Estruturei charts, values e automa\c{c}\~oes de rollout para ambientes distintos, aumentando previsibilidade operacional e reduzindo mudan\c{c}as manuais em deploy.}
+      \resumeItemListEnd
+
+    \resumeExperienceHeading
+      {Software Engineer}{https://dai.tec.br/}{DAI-TEC}{2022 -- 2023}
+      {{\footnotesize plataforma de assistentes IA com backend, billing recorrente e deploy em AWS}}{{\footnotesize Integral / Remoto}}{}
+      \resumeItemListStart
+        \resumeItem{Estruturei a camada de plataforma com \textbf{GitHub Actions}, \textbf{Docker}, deploy em \textbf{AWS/ECR/ECS}, Grafana Agent e automa\c{c}\~oes com \textbf{Terraform}, padronizando publica\c{c}\~ao e configura\c{c}\~ao entre ambientes.}
+        \resumeItem{Desenvolvi o backend da plataforma com \textbf{Node.js/TypeScript} e \textbf{MongoDB}, sustentando APIs, autentica\c{c}\~ao e integra\c{c}\~oes usadas em produ\c{c}\~ao.}
+        \resumeItem{Implementei o fluxo de billing recorrente com \textbf{Stripe}, incluindo checkout, webhooks, cria\c{c}\~ao e cancelamento de assinaturas, aumentando a robustez operacional do ciclo de pagamento.}
+      \resumeItemListEnd
+
+    \resumeExperienceHeading
+      {Desenvolvedor Full Stack}{https://crop2u.com}{Creath Digital / crop2u}{2021 -- 2022}
+      {{\footnotesize produto web com foco em fluxo comercial e qualidade de entrega}}{{\footnotesize Integral / Remoto}}{}
+      \resumeItemListStart
+        \resumeItem{Atuei como full stack em \textbf{Angular/Node.js}, fortalecendo qualidade de entrega com testes E2E, data-testid, TDD e pair programming para aumentar previsibilidade das releases e reduzir retrabalho do time.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Compet\^encias T\'ecnicas}
+\small
+\textbf{Platform/Cloud:} Kubernetes, K3s, Helm, ArgoCD, Terraform, Ansible, Docker, GitHub Actions, AWS, ECS, ECR \\
+\textbf{Observabilidade:} Prometheus, VictoriaMetrics, Grafana, OpenTelemetry, Elasticsearch, exporters customizados \\
+\textbf{Backend (segunda frente):} Python, Node.js, TypeScript, APIs REST, MongoDB, PostgreSQL, Redis, Stripe
+
+%-----------EDUCATION-----------
+\section{Educa\c{c}\~ao}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UNIFAEL}{{\footnotesize S\~ao Paulo, SP}}
+      {Bacharelado em Ci\^encia da Computa\c{c}\~ao}{Out. 2022 -- Presente}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
