@@ -21,6 +21,7 @@ secret.txt
 # ==============================================================================
 .vscode/
 .idea/
+.obsidian/
 *.sublime-workspace
 *.sublime-project
 .project
